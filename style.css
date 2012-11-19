@@ -1,0 +1,36 @@
+/*
+Plugin Name: WP Page Tree
+*/
+
+#wppt {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+#wppt ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#wppt li {
+	background-image: none;
+	line-height: 16px;
+	list-style-type: none;
+	padding: 0;
+	white-space: nowrap;
+}
+#wppt li div {
+	height: 16px;
+}
+#wppt li div span {
+	vertical-align: 20%;
+}
+#wppt li div span.selected {
+	border: 1px dotted #666;
+}
+
+#wppt .title {
+	font-size: 12px;
+	font-weight: bold;
+	vertical-align: 20%;
+}
+
