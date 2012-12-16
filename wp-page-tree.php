@@ -3,7 +3,7 @@
 Plugin Name: WP Page Tree
 Plugin URI: https://charles.lecklider.org/wordpress/wp-page-tree/
 Description: Widget to display a navigable tree of pages.
-Version: 1.0
+Version: 1.1
 Author: Charles Lecklider
 Author URI: https://charles.lecklider.org/
 License: GPL2
@@ -112,13 +112,13 @@ class WP_Page_Tree_Widget extends WP_Widget
 	{
 		global $post;
 
-		$html .= str_repeat("\t",count($levels)+2).'<li><div>';
+		$html = str_repeat("\t",count($levels)+2).'<li><div>';
 		foreach($levels as $level) {
 			$img = ($level) ? 'empty' : 'line';
 			$html .= '<img src="'.plugins_url("icons/$img.gif",__FILE__).'">';
 		}
 		$levels[] = $last;
-		if ($counts[$page->ID]->c>0) {
+		if (is_object($obj = @$counts[$page->ID]) && $obj->c > 0) {
 			if (in_array($page->ID,$posts) || $page->ID == $post->ID) {
 				$img = ($last) ? 'minus' : 'minusbottom';
 				$html .= '<a class="wppt_minus" href="#"><img src="'.plugins_url("icons/$img.gif",__FILE__).'" width="19" height="16"></a>';
