@@ -3,13 +3,13 @@
 Plugin Name: WP Page Tree
 Plugin URI: https://charles.lecklider.org/wordpress/wp-page-tree/
 Description: Widget to display a navigable tree of pages.
-Version: 1.1
+Version: 1.1.1
 Author: Charles Lecklider
 Author URI: https://charles.lecklider.org/
 License: GPL2
 */
 
-/*  Copyright 2012  Charles Lecklider  (email : wordpress@charles.lecklider.org)
+/*  Copyright 2012-2015  Charles Lecklider  (email : wordpress@charles.lecklider.org)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as

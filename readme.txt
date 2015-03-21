@@ -5,7 +5,7 @@ Plugin URI: https://charles.lecklider.org/wordpress/wp-mercurial/
 Tags: page tree, site navigation
 Requires at least: 3.4.0
 Tested up to: 4.1.1
-Stable tag: 1.1
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,9 @@ Similar to *Site Page Tree*, but better for SEO.
 1. Add and configure the widget in Appearance -> Widgets
 
 == Changelog ==
+
+= 1.1.1 =
+Version bump; checked compatibility with WP 4.1.1.
 
 = 1.1 =
 Test with WP3.5, fix warnings.
